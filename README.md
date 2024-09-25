@@ -47,6 +47,7 @@ Playwright тесно интегрирован с фреймворком pytest,
 **Пример:**
 
 ` pytest test_login.py --browser webkit --browser firefox --headed `
+
 ` pytest test_login.py --device='iPhone 13' `
 
 
