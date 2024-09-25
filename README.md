@@ -45,6 +45,21 @@ Playwright тесно интегрирован с фреймворком pytest,
   Устройство для эмуляции (доступен широкий выбор устройств, в том числе и мобильные).
 
 **Пример:**
-```
-pytest test_login.py --browser webkit --browser firefox --headed
-pytest test_login.py --device="iPhone 13"
+
+` pytest test_login.py --browser webkit --browser firefox --headed `
+` pytest test_login.py --device='iPhone 13' `
+
+
+
+### Отладка
+
+Для отладки тестов используется Playwright Inspector, который вызывается командами:  
+
+* Отладка всех тестов: $env:PWDEBUG=1
+` pytest -s `
+
+* Отладка одного тестового файла: $env:PWDEBUG=1
+` pytest -s test_example.py `
+
+* Отладка конкретного теста: $env:PWDEBUG=1
+` pytest -s -k function `
