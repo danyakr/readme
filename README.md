@@ -56,11 +56,14 @@ Playwright тесно интегрирован с фреймворком pytest,
 
 Для отладки тестов используется Playwright Inspector, который вызывается командами:  
 
-* Отладка всех тестов: $env:PWDEBUG=1
-` pytest -s `
+* Отладка всех тестов:
+` $env:PWDEBUG=1
+pytest -s `
 
-* Отладка одного тестового файла: $env:PWDEBUG=1
-` pytest -s test_example.py `
+* Отладка одного тестового файла:
+` $env:PWDEBUG=1
+pytest -s test_example.py `
 
-* Отладка конкретного теста: $env:PWDEBUG=1
-` pytest -s -k function `
+* Отладка конкретного теста:
+` $env:PWDEBUG=1
+pytest -s -k function `
