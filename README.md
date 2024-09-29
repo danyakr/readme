@@ -39,10 +39,11 @@
 3. Создайте виртуальное окружение: `python -m venv .venv`
 
 Для активации виртуального окружения используйте следующие команды:
-Windows:
-.venv\Scripts\activate
+* **Windows:**
+`.venv\Scripts\activate`
+
 * **macOS/Linux:**
-source .venv/bin/activate
+`source .venv/bin/activate`
 Для выхода из виртуального окружения и возврата к глобальному окружению Python введите следующую команду:
 deactivate
 
