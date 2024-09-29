@@ -201,6 +201,8 @@ paste_text_from_buffer(text: str, type_field: Literal['email', 'password', 'code
 ### 5. Примеры использования <a name="5-примеры-использования"></a>
 
 #### 5.1 Базовый сценарий авторизации
+
+```python
 from playwright.sync_api import sync_playwright
 from pages.login_page import LoginPage
 
@@ -213,9 +215,11 @@ with sync_playwright() as p:
     login_page.fill_email_field("test@example.com")
     login_page.fill_pwd_field("password123")
     login_page.click_login_btn()  # Клик по кнопке "Войти"
+```
 
 #### 5.2 Сценарий с двухфакторной аутентификацией
 
+```python
 from playwright.sync_api import sync_playwright
 from framework import LoginPage
 
@@ -233,9 +237,11 @@ with sync_playwright() as p:
     login_page.check_verification_code_field_exists()
     login_page.fill_verification_code_field("1234")
     login_page.click_confirm_btn()  # Клик по кнопке "Подтвердить"
+```
 
 #### 5.3 Сценарий с проверкой ошибок
 
+```python
 from playwright.sync_api import sync_playwright
 from framework import LoginPage
 
@@ -251,7 +257,7 @@ with sync_playwright() as p:
 
     # Проверка ошибки
     login_page.check_error_text(USER_NOT_FOUND)
-
+```
  
 ### 6. Файлы констант <a name="6-файлы-констант"></a>
 
