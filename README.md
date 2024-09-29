@@ -387,6 +387,8 @@ pytest tests/test_login_page.py::TestLoginBtn::test_login_btn_exists
 * **pytest -m smoke**: Запускает только тесты, отмеченные тегом smoke.
 * **pytest -m "not smoke"**: Запускает все тесты, кроме отмеченных тегом smoke.
 
+<br>
+
 #### 8.2 Настройка запуска
 
 ##### 8.2.1 Выбор браузера
@@ -403,6 +405,8 @@ pytest tests/test_login_page.py::TestLoginBtn::test_login_btn_exists
 ##### 8.2.3 Замедление выполнения
 
 * **pytest --slowmo 500**: Замедляет операции Playwright на 500 миллисекунд для удобного просмотра выполнения тестов.
+
+<br>
 
 #### 8.3 Отладка тестов
 
