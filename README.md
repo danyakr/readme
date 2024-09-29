@@ -2,8 +2,8 @@
 
 ### Оглавление
 
-* [1. Введение](#1-введение)
-* [2. Установка и настройка](#2-установка-и-настройка)
+[1. Введение](#1-введение)
+[2. Установка и настройка](#2-установка-и-настройка)
 * [3. Структура проекта (POM)](#3-структура-проекта-pom)
 * [4. API Reference (Справочник по API)](#4-api-reference)
 * [5. Примеры использования](#5-примеры-использования)
@@ -121,57 +121,57 @@
 
 ##### 4.1.2 Методы для работы с кнопкой "Войти"
 
-* `check_login_btn_exists()`: Проверяет, что кнопка "Войти" отображается на странице.
-* `check_login_btn_not_exists()`: Проверяет, что кнопка "Войти" не отображается на странице.
+* `check_login_btn_exists()`: Проверка, что кнопка "Войти" отображается на странице.
+* `check_login_btn_not_exists()`: Проверка, что кнопка "Войти" не отображается на странице.
 * `click_login_btn()`: Нажатие на кнопку "Войти".
-* `check_login_btn_disabled()`: Проверяет, что кнопка "Войти" отключена.
-* `check_login_btn_cursor()`: Проверяет, что курсор над кнопкой "Войти" меняется на указатель.
-* `check_login_btn_hover_color_change()`: Проверяет, что цвет фона кнопки "Войти" меняется при наведении курсора.
+* `check_login_btn_disabled()`: Проверка, что кнопка "Войти" отключена.
+* `check_login_btn_cursor()`: Проверка, что курсор над кнопкой "Войти" меняется на указатель.
+* `check_login_btn_hover_color_change()`: Проверка, что цвет фона кнопки "Войти" меняется при наведении курсора.
 
 ##### 4.1.3 Методы для работы с кнопкой "Подтвердить"
 
-* `check_confirm_btn_exists()`: Проверяет, что кнопка "Подтвердить" отображается на странице.
-* `check_confirm_btn_not_exists()`: Проверяет, что кнопка "Подтвердить" не отображается на странице.
+* `check_confirm_btn_exists()`: Проверка, что кнопка "Подтвердить" отображается на странице.
+* `check_confirm_btn_not_exists()`: Проверка, что кнопка "Подтвердить" не отображается на странице.
 * `click_confirm_btn()`: Нажатие на кнопку "Подтвердить".
-* `check_confirm_btn_disabled()`: Проверяет, что кнопка "Подтвердить" отключена.
-* `check_confirm_btn_cursor()`: Проверяет, что курсор над кнопкой "Подтвердить" меняется на указатель.
-* `check_confirm_btn_hover_color_change()`: Проверяет, что цвет фона кнопки "Подтвердить" меняется при наведении курсора.
+* `check_confirm_btn_disabled()`: Проверка, что кнопка "Подтвердить" отключена.
+* `check_confirm_btn_cursor()`: Проверка, что курсор над кнопкой "Подтвердить" меняется на указатель.
+* `check_confirm_btn_hover_color_change()`: Проверка, что цвет фона кнопки "Подтвердить" меняется при наведении курсора.
 
 ##### 4.1.4 Методы для работы с полем логина (email)
 
-* `check_email_field_exists()`: Проверяет, что поле логина (email) отображается на странице.
+* `check_email_field_exists()`: Проверка, что поле логина (email) отображается на странице.
 * `click_email_field()`: Нажатие на поле логина (email).
-* `fill_email_field(text: str)`: Вводит текст в поле логина (email).
-* `check_email_field_cursor()`: Проверяет, что курсор над полем логина (email) меняется на текст.
+* `fill_email_field(text: str)`: Ввод текста в поле логина (email).
+* `check_email_field_cursor()`: Проверка, что курсор над полем логина (email) меняется на текст.
 
 ##### 4.1.5 Методы для работы с полем пароля
 
-* `check_pwd_field_exists()`: Проверяет, что поле пароля отображается на странице.
-* `check_pwd_field_hidden()`: Проверяет, что поле пароля скрыто.
+* `check_pwd_field_exists()`: Проверка, что поле пароля отображается на странице.
+* `check_pwd_field_hidden()`: Проверка, что поле пароля скрыто.
 * `click_pwd_field()`: Нажатие на поле пароля.
-* `fill_pwd_field(text: str)`: Вводит текст в поле пароля.
-* `check_pwd_field_cursor()`: Проверяет, что курсор над полем пароля меняется на текст.
-* `check_pwd_field_type()`: Проверяет, что тип поля пароля - "password".
+* `fill_pwd_field(text: str)`: Ввод текста в поле пароля.
+* `check_pwd_field_cursor()`: Проверка, что курсор над полем пароля меняется на текст.
+* `check_pwd_field_type()`: Проверка, что тип поля пароля - "password".
 
 ##### 4.1.6 Методы для работы с полем проверочного кода
 
-* `check_verification_code_field_exists()`: Проверяет, что поле проверочного кода отображается на странице.
-* `check_verification_code_field_not_exists()`: Проверяет, что поле проверочного кода не отображается на странице.
-* `click_verification_code_field()`: Кликает по полю проверочного кода.
-* `fill_verification_code_field(text: str)`: Вводит текст в поле проверочного кода.
-* `check_verification_code_field_cursor()`: Проверяет, что курсор над полем проверочного кода меняется на текст.
+* `check_verification_code_field_exists()`: Проверка, что поле проверочного кода отображается на странице.
+* `check_verification_code_field_not_exists()`: Проверка, что поле проверочного кода не отображается на странице.
+* `click_verification_code_field()`: Нажатие на поле проверочного кода.
+* `fill_verification_code_field(text: str)`: Ввод текста в поле проверочного кода.
+* `check_verification_code_field_cursor()`: Проверка, что курсор над полем проверочного кода меняется на текст.
 
 ##### 4.1.7 Методы для нажатия Enter
 
-* `press_enter_login_btn()`: Нажимает Enter над кнопкой "Войти".
-* `press_enter_confirm_btn()`: Нажимает Enter над кнопкой "Подтвердить".
-* `press_enter_btn_from_login()`: Нажимает Enter над полем логина (email).
-* `press_enter_btn_from_pwd()`: Нажимает Enter над полем пароля.
-* `press_enter_btn_from_code()`: Нажимает Enter над полем проверочного кода.
+* `press_enter_login_btn()`: Нажатие Enter у кнопки "Войти".
+* `press_enter_confirm_btn()`: Нажатие Enter у кнопки "Подтвердить".
+* `press_enter_btn_from_login()`: Нажатие Enter в поле логина (email).
+* `press_enter_btn_from_pwd()`: Нажатие Enter в поле пароля.
+* `press_enter_btn_from_code()`: Нажатие Enter в поле проверочного кода.
 
 ##### 4.1.8 Методы для проверки ошибок
 
-* `check_error_text(error: str)`: Проверяет, что текст ошибки отображается на странице.
+* `check_error_text(error: str)`: Проверка, что текст ошибки отображается на странице.
 
 `error`: Текст ошибки, в качестве аргумента передается константа, определенные в файле error_const.py
 
@@ -190,25 +190,25 @@
 
 ##### 4.1.10 Методы для работы со ссылкой "Забыли пароль?"
 
-* `check_forgot_pwd_link_exists()`: Проверяет, что ссылка "Забыли пароль?" отображается на странице.
-* `click_forgot_pwd_link()`: Кликает по ссылке "Забыли пароль?".
-* `check_forgot_pwd_link_cursor()`: Проверяет, что курсор над ссылкой "Забыли пароль?" меняется на указатель.
+* `check_forgot_pwd_link_exists()`: Проверка, что ссылка "Забыли пароль?" отображается на странице.
+* `click_forgot_pwd_link()`: Нажатие на ссылку "Забыли пароль?".
+* `check_forgot_pwd_link_cursor()`: Проверка, что курсор над ссылкой "Забыли пароль?" меняется на указатель.
 
 ##### 4.1.11 Методы для работы с полем SMS-кода
 
-* `check_sms_verification_code_field_exists()`: Проверяет, что поле SMS-кода отображается на странице.
-* `check_sms_verification_code_field_not_exists()`: Проверяет, что поле SMS-кода не отображается на странице.
-* `click_sms_verification_code_field()`: Кликает по полю SMS-кода.
-* `fill_sms_verification_code_field(text: str)`: Вводит текст в поле SMS-кода.
-* `check_sms_verification_code_field_cursor()`: Проверяет, что курсор над полем SMS-кода меняется на текст.
+* `check_sms_verification_code_field_exists()`: Проверка, что поле SMS-кода отображается на странице.
+* `check_sms_verification_code_field_not_exists()`: Проверка, что поле SMS-кода не отображается на странице.
+* `click_sms_verification_code_field()`: Нажатие на поле SMS-кода.
+* `fill_sms_verification_code_field(text: str)`: Ввод текста в поле SMS-кода.
+* `check_sms_verification_code_field_cursor()`: Проверка, что курсор над полем SMS-кода меняется на текст.
 
 ##### 4.1.12 Методы для работы с полем email-кода
 
-* `check_email_verification_code_field_exists()`: Проверяет, что поле email-кода отображается на странице.
-* `check_email_verification_code_field_not_exists()`: Проверяет, что поле email-кода не отображается на странице.
-* `click_email_verification_code_field()`: Кликает по полю email-кода.
-* `fill_email_verification_code_field(text: str)`: Вводит текст в поле email-кода.
-* `check_email_verification_code_field_cursor()`: Проверяет, что курсор над полем email-кода меняется на текст.
+* `check_email_verification_code_field_exists()`: Проверка, что поле email-кода отображается на странице.
+* `check_email_verification_code_field_not_exists()`: Проверка, что поле email-кода не отображается на странице.
+* `click_email_verification_code_field()`: Нажатие на поле email-кода.
+* `fill_email_verification_code_field(text: str)`: Ввод текста в поле email-кода.
+* `check_email_verification_code_field_cursor()`: Проверка, что курсор над полем email-кода меняется на текст.
 
  
 ### 5. Примеры использования <a name="5-примеры-использования"></a>
