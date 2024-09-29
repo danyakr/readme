@@ -126,7 +126,7 @@
 * `click_login_btn()`: Нажатие на кнопку "Войти".
 * `check_login_btn_disabled()`: Проверка, что кнопка "Войти" отключена.
 * `check_login_btn_cursor()`: Проверка, что курсор над кнопкой "Войти" меняется на указатель.
-* `check_login_btn_hover_color_change()`: Проверка, что цвет фона кнопки "Войти" меняется при наведении курсора.
+* `check_login_btn_hover_color_change()`: Проверка, кнопка "Войти" имеет стандартный цвет фона (DEFAULT_COLOR), а при наведении курсора меняет цвет на заданный (HOVER_COLOR).
 
 ##### 4.1.3 Методы для работы с кнопкой "Подтвердить"
 
@@ -135,14 +135,14 @@
 * `click_confirm_btn()`: Нажатие на кнопку "Подтвердить".
 * `check_confirm_btn_disabled()`: Проверка, что кнопка "Подтвердить" отключена.
 * `check_confirm_btn_cursor()`: Проверка, что курсор над кнопкой "Подтвердить" меняется на указатель.
-* `check_confirm_btn_hover_color_change()`: Проверка, что цвет фона кнопки "Подтвердить" меняется при наведении курсора.
+* `check_confirm_btn_hover_color_change()`: Проверка, что кнопка "Подтвердить" имеет стандартный цвет фона (DEFAULT_COLOR), а при наведении курсора меняет цвет на заданный (HOVER_COLOR).
 
 ##### 4.1.4 Методы для работы с полем логина (email)
 
 * `check_email_field_exists()`: Проверка, что поле логина (email) отображается на странице.
 * `click_email_field()`: Нажатие на поле логина (email).
 * `fill_email_field(text: str)`: Ввод текста в поле логина (email).
-* `check_email_field_cursor()`: Проверка, что курсор над полем логина (email) меняется на текст.
+* `check_email_field_cursor()`: Проверка, что тип курсора над полем логина (email) меняется на ввод текстовый.
 
 ##### 4.1.5 Методы для работы с полем пароля
 
@@ -150,7 +150,7 @@
 * `check_pwd_field_hidden()`: Проверка, что поле пароля скрыто.
 * `click_pwd_field()`: Нажатие на поле пароля.
 * `fill_pwd_field(text: str)`: Ввод текста в поле пароля.
-* `check_pwd_field_cursor()`: Проверка, что курсор над полем пароля меняется на текст.
+* `check_pwd_field_cursor()`: Проверка, что тип курсор над полем пароля меняется на текстовый.
 * `check_pwd_field_type()`: Проверка, что тип поля пароля - "password".
 
 ##### 4.1.6 Методы для работы с полем проверочного кода
@@ -159,12 +159,12 @@
 * `check_verification_code_field_not_exists()`: Проверка, что поле проверочного кода не отображается на странице.
 * `click_verification_code_field()`: Нажатие на поле проверочного кода.
 * `fill_verification_code_field(text: str)`: Ввод текста в поле проверочного кода.
-* `check_verification_code_field_cursor()`: Проверка, что курсор над полем проверочного кода меняется на текст.
+* `check_verification_code_field_cursor()`: Проверка, что тип курсора над полем проверочного кода меняется на текстовый.
 
 ##### 4.1.7 Методы для нажатия Enter
 
-* `press_enter_login_btn()`: Нажатие Enter у кнопки "Войти".
-* `press_enter_confirm_btn()`: Нажатие Enter у кнопки "Подтвердить".
+* `press_enter_login_btn()`: Нажатие Enter для кнопки "Войти".
+* `press_enter_confirm_btn()`: Нажатие Enter для кнопки "Подтвердить".
 * `press_enter_btn_from_login()`: Нажатие Enter в поле логина (email).
 * `press_enter_btn_from_pwd()`: Нажатие Enter в поле пароля.
 * `press_enter_btn_from_code()`: Нажатие Enter в поле проверочного кода.
@@ -200,7 +200,7 @@
 * `check_sms_verification_code_field_not_exists()`: Проверка, что поле SMS-кода не отображается на странице.
 * `click_sms_verification_code_field()`: Нажатие на поле SMS-кода.
 * `fill_sms_verification_code_field(text: str)`: Ввод текста в поле SMS-кода.
-* `check_sms_verification_code_field_cursor()`: Проверка, что курсор над полем SMS-кода меняется на текст.
+* `check_sms_verification_code_field_cursor()`: Проверка, что тип курсора над полем SMS-кода меняется на текстовый.
 
 ##### 4.1.12 Методы для работы с полем email-кода
 
@@ -208,7 +208,7 @@
 * `check_email_verification_code_field_not_exists()`: Проверка, что поле email-кода не отображается на странице.
 * `click_email_verification_code_field()`: Нажатие на поле email-кода.
 * `fill_email_verification_code_field(text: str)`: Ввод текста в поле email-кода.
-* `check_email_verification_code_field_cursor()`: Проверка, что курсор над полем email-кода меняется на текст.
+* `check_email_verification_code_field_cursor()`: Проверка, что тип курсора над полем email-кода меняется на текстовый.
 
  
 ### 5. Примеры использования <a name="5-примеры-использования"></a>
