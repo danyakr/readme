@@ -230,49 +230,51 @@ with sync_playwright() as p:
     page = browser.new_page()
     login_page = LoginPage(page)
 
-    login_page.navigate()  # Переход на страницу авторизации
+    login_page.navigate()
     login_page.fill_email_field("test@example.com")
     login_page.fill_pwd_field("password123")
-    login_page.click_login_btn()  # Клик по кнопке "Войти"
+    login_page.click_login_btn()
 ```
 
 #### 5.2 Сценарий с двухфакторной аутентификацией
 
 ```python
 from playwright.sync_api import sync_playwright
-from framework import LoginPage
+from pages.login_page import LoginPage
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     page = browser.new_page()
     login_page = LoginPage(page)
 
-    login_page.navigate()  # Переход на страницу авторизации
+    login_page.navigate()
     login_page.fill_email_field("test@example.com")
     login_page.fill_pwd_field("password123")
-    login_page.click_login_btn()  # Клик по кнопке "Войти"
+    login_page.click_login_btn()
 
     # Проверка двухфакторной аутентификации
     login_page.check_verification_code_field_exists()
     login_page.fill_verification_code_field("1234")
-    login_page.click_confirm_btn()  # Клик по кнопке "Подтвердить"
+    login_page.click_confirm_btn()
 ```
 
 #### 5.3 Сценарий с проверкой ошибок
 
 ```python
 from playwright.sync_api import sync_playwright
-from framework import LoginPage
+from pages.login_page import LoginPage
+
+from const.error_const import USER_NOT_FOUND
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     page = browser.new_page()
     login_page = LoginPage(page)
 
-    login_page.navigate()  # Переход на страницу авторизации
+    login_page.navigate()
     login_page.fill_email_field("invalid@gmail.com")
     login_page.fill_pwd_field("wrong_password")
-    login_page.click_login_btn()  # Клик по кнопке "Войти"
+    login_page.click_login_btn()
 
     # Проверка ошибки
     login_page.check_error_text(USER_NOT_FOUND)
