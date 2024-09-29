@@ -300,12 +300,9 @@ with sync_playwright() as p:
   * MAX_LOGIN_LENGTH: Максимальная допустимая длина логина.
   * MIN_PASSWORD_LENGTH: Минимальная допустимая длина пароля.
   * MAX_PASSWORD_LENGTH: Максимальная допустимая длина пароля.
-  * MIN_VERIFICATION_CODE_LENGTH: Минимальная допустимая длина проверочного кода.
-  * MAX_VERIFICATION_CODE_LENGTH: Максимальная допустимая длина проверочного кода.
-  * MIN_SMS_CODE_LENGTH: Минимальная допустимая длина SMS-кода.
-  * MAX_SMS_CODE_LENGTH: Максимальная допустимая длина SMS-кода.
-  * MIN_EMAIL_CODE_LENGTH: Минимальная допустимая длина email-кода.
-  * MAX_EMAIL_CODE_LENGTH: Максимальная допустимая длина email-кода.
+  * VERIFICATION_CODE_LENGTH: Длина проверочного кода.
+  * SMS_CODE_LENGTH: Длина SMS-кода.
+  * EMAIL_CODE_LENGTH: Длина email-кода.
   * DEFAULT_COLOR: Цвет фона кнопки до наведения.
   * HOVER_COLOR: Цвет фона кнопки после наведения.
 
